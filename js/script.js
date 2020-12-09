@@ -16,6 +16,14 @@ Vue.component('alert', {
         }
     }
 });
+Vue.component('my-butoon', {
+    template: '<button type="button" v-on:click="conter++">{{conter}}</button>',
+    data() {
+        return {
+            conter: 0
+        }
+    }
+});
 
 Vue.component('jumbotron', {
     template: `
@@ -128,4 +136,7 @@ let app4 = new Vue({
             margin: 50 + 'px'
         }
     }
+});
+let myButton = new Vue({
+    el: '#my-button',
 });
