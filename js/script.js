@@ -16,6 +16,7 @@ Vue.component('alert', {
         }
     }
 });
+
 Vue.component('my-butoon', {
     template: '<button type="button" v-on:click="conter++">{{conter}}</button>',
     data() {
@@ -140,3 +141,9 @@ let app4 = new Vue({
 let myButton = new Vue({
     el: '#my-button',
 });
+var clickShomar = new Vue({
+    el: '#click-shomar',
+    data: {
+        counter: 0
+    }
+})

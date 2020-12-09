@@ -77,11 +77,18 @@
                     <my-butoon></my-butoon>
                     <my-butoon></my-butoon>
                     <my-butoon></my-butoon>
-
                 </div>
 
             </div>
         </div>
+
+        <div id="click-shomar" class="container" style="margin-bottom: 10rem;text-align: center;margin-top: 7rem;">
+            <h1 id="click-shomar" class="container">
+                <h1>تعداد کلیک شما {{ counter }} است</h1>
+                <button type="button" id="plus" v-on:click="counter++">کلیک</button>
+        </div>
+
+
         <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
         <script src="js/script.js"></script>
     </body>
