@@ -16,7 +16,18 @@ Vue.component('alert', {
         }
     }
 });
-
+Vue.component('panel', {
+    template: `
+<div class="panel panel-success">
+<div class="panel-heading">
+<h3 class="panel-title"><slot name="title"></slot></h3>
+</div>
+<div class="panel-body">
+<slot></slot>
+</div>
+</div>
+`
+})
 Vue.component('my-butoon', {
     template: '<button type="button" v-on:click="conter++">{{conter}}</button>',
     data() {
@@ -146,4 +157,7 @@ var clickShomar = new Vue({
     data: {
         counter: 0
     }
+})
+var panel = new Vue({
+    el: '#panel'
 })
