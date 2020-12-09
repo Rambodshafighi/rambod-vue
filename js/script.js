@@ -118,3 +118,14 @@ var app1 = new Vue({
 var app3 = new Vue({
     el: '#app3'
 })
+let app4 = new Vue({
+    el: '#app4',
+    data: {
+        imageUrl: 'https://roocket.ir/public/image/2017/6/13/vuejs.jpg',
+        altImage: 'اموزش با اگولار',
+        style: {
+            width: 1000 + 'px',
+            margin: 50 + 'px'
+        }
+    }
+});
