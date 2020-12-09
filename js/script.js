@@ -16,6 +16,23 @@ Vue.component('alert', {
         }
     }
 });
+Vue.component('alert', {
+    props: ['title', 'message', 'type'],
+    template: `<div :class="['alert' , classAlert]" role="alert" v-show="isActive">     
+                  <button type="button" class="close" @click="isActive= false">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                <strong>{{ title }}</strong> {{ message }}
+              
+              </div>`,
+    data() {
+        return {
+            classAlert: `alert-${this.type}`,
+            isActive: true
+        }
+    },
+});
+
 Vue.component('panel', {
     template: `
 <div class="panel panel-success">
@@ -166,4 +183,7 @@ var unordereList = new Vue({
     data: {
         users: ["rambod", "amir-salar", "javad", "saleh", "mehran", "mehdi", "hossein"]
     }
+});
+let msgAlert = new Vue({
+    el: '#msg-alert',
 });
