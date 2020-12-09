@@ -1,12 +1,19 @@
 body {
-  font-family: IRANsans;
+    font-family: IRANsans;
 }
 
-a:hover , a:focus {
-  text-decoration: none;
+a:hover,
+a:focus {
+    text-decoration: none;
 }
 
 .complete {
-  text-decoration: line-through;
-  color: #777;
+    text-decoration: line-through;
+    color: #777;
+}
+
+#app1 {
+    margin-bottom: 4rem;
+    text-align: center;
+    margin-top: 5rem;
 }

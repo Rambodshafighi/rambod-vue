@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Learning Vuejs 2</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -8,30 +9,54 @@
     <link rel="stylesheet" href="css/fontiran.css">
     <link rel="stylesheet" href="css/style.css">
 
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="app" class="container">
         <!-- Code -->
         <div class="row">
-          <div class="col-lg-12">
+            <div class="col-lg-12">
 
-            <h2>لیست کارهای روزانه شما</h2>
-            <todos :todos="todos"></todos>
-            <input type="text" class="form-control" v-model="newTodo.title" placeholder="کار جدید" v-on:keyup.enter="addTodo">
-            <alert style="margin-top:20px" :title="alert.title" :message="alert.message" :type="alert.type" v-show="alert.show" @close="alert.show = false"></alert>
+                <h2>لیست کارهای روزانه شما</h2>
+                <todos :todos="todos"></todos>
+                <input type="text" class="form-control" v-model="newTodo.title" placeholder="کار جدید" v-on:keyup.enter="addTodo">
+                <alert style="margin-top:20px" :title="alert.title" :message="alert.message" :type="alert.type" v-show="alert.show" @close="alert.show = false"></alert>
 
-            <div v-if="showCompleteBox">
-              <hr>
-              <h2>کارهای انجام شده</h2>
-              <ul class="list-group">
-                <li class="list-group-item" v-for="(todo , index) in completeTodos">{{ todo.title }}</li>
-              </ul>
+                <div v-if="showCompleteBox">
+                    <hr>
+                    <h2>کارهای انجام شده</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item" v-for="(todo , index) in completeTodos">{{ todo.title }}</li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
+    </div>
+
+    <div id="app1">
+        <h3>type please</h3>
+        <input type="text" v-model="message">
+        <p>{{ message }}</p>
     </div>
 
     <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+<script>
+    var app1 = new Vue({
+        el: '#app1',
+        data: {
+            message: ''
+        }
+    })
+</script>
