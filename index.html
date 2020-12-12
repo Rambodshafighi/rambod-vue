@@ -4,16 +4,18 @@
 <head>
     <meta charset="utf-8">
     <title>Learning Vuejs 2</title>
+    <!---------- start link  ---------->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
     <link rel="stylesheet" href="css/fontiran.css">
     <link rel="stylesheet" href="css/style.css">
+    <!---------- end link  ---------->
 
 </head>
 
 <body>
+    <!---------- start todo  ---------->
     <div id="app" class="container">
-        <!-- Code -->
         <div class="row">
             <div class="col-lg-12">
 
@@ -32,12 +34,20 @@
             </div>
         </div>
     </div>
+    <!---------- start todo  ---------->
 
+
+    <!---------- start input text  ---------->
     <div id="app1">
         <h3>type please</h3>
         <input type="text" v-model="message">
         <p>{{ message }}</p>
     </div>
+
+    <!---------- end input text  ---------->
+
+
+    <!---------- start jumbotron bootstrap  ---------->
 
     <body>
         <div id="app3" class="container">
@@ -61,6 +71,12 @@
         </div>
 
 
+        <!---------- end jumbotron bootstrap  ---------->
+
+
+
+        <!---------- start image vue ---------->
+
         <div id="app4" class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -69,6 +85,10 @@
             </div>
         </div>
 
+        <!---------- end show image vue ---------->
+
+
+        <!---------- start show button ---------->
 
         <div id="my-button" class="container">
             <div class="row">
@@ -82,11 +102,19 @@
             </div>
         </div>
 
+
+        <!---------- start click conter ---------->
+
         <div id="click-shomar" class="container" style="margin-bottom: 10rem;text-align: center;margin-top: 7rem;">
             <h1 id="click-shomar" class="container">
                 <h1>تعداد کلیک شما {{ counter }} است</h1>
                 <button type="button" id="plus" v-on:click="counter++">کلیک</button>
         </div>
+
+        <!---------- end click conter ---------->
+
+
+        <!---------- start panel ---------->
 
         <div id="panel" class="container">
             <div class="row">
@@ -100,11 +128,21 @@
             </div>
         </div>
 
+        <!---------- end panel ---------->
+
+
+        <!---------- start show ul ---------->
+
         <div id="unordere-list">
             <ul class="unli">
                 <li v-for="(value , index) in users">{{index}} - {{value}}</li>
             </ul>
         </div>
+
+        <!---------- end show ul ---------->
+
+
+        <!---------- start alert ---------->
 
         <div id="msg-alert" class="container">
             <div class="row">
@@ -117,11 +155,17 @@
             </div>
         </div>
 
+        <!---------- end alert ---------->
+
+
+        <!---------- start lick js ---------->
+
         <script src="https://unpkg.com/vue@2.1.10/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
         <script src="js/script.js"></script>
+
+        <!---------- end lick js ---------->
+
     </body>
 
 </html>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
-<script>
-</script>

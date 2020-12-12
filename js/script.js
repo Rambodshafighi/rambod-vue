@@ -1,5 +1,5 @@
 window.Event = new Vue();
-
+// start components
 Vue.component('alert', {
     props: ['title', 'message', 'type'],
     template: `
@@ -86,6 +86,9 @@ Vue.component('todo', {
     }
 });
 
+// end components
+
+// start vue 
 
 let app = new Vue({
     el: '#app',
@@ -187,3 +190,5 @@ var unordereList = new Vue({
 let msgAlert = new Vue({
     el: '#msg-alert',
 });
+
+// end vue
